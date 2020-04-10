@@ -24,7 +24,7 @@ fi
 #================================================
 printf "${GREEN}Prepare insatll.\n${NC}"
 apt-get -y update
-apt-get -y htop
+apt-get -y install htop
 apt-get -y install wget
 apt-get -y install unzip
 apt-get -y install gnupg
