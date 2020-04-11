@@ -25,10 +25,8 @@ printf "${GREEN}Prepare insatll.\n${NC}"
 yum -y install epel-release
 yum -y update
 yum -y install htop
-yum -y install wget
 yum -y install unzip
 yum -y install gnupg
-yum -y install busybox-static
 yum -y install fonts-ipafont fonts-ipaexfont
 
 #================================================
