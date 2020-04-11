@@ -59,7 +59,6 @@ yum -y install tigervnc-server
 #============================================
 # Run Selenium
 #============================================
-yum clean
 #java -jar /usr/local/bin/selenium-server-standalone-3.6.0.jar -enablePassThrough false -timeout 60 &
 #============================================
 # Echo
