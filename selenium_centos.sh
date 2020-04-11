@@ -27,7 +27,7 @@ yum -y update
 yum -y install htop
 yum -y install unzip
 yum -y install gnupg
-yum -y install fonts-ipafont fonts-ipaexfont
+yum -y install ipa-gothic-fonts ipa-mincho-fonts ipa-pgothic-fonts ipa-pmincho-fonts
 
 #================================================
 #Install Java runtime
