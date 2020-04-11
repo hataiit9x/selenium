@@ -38,8 +38,8 @@ yum -y install java-11-openjdk-devel
 #============================================
 # Install Google Chrome
 #============================================
-wget --no-verbose  "https://raw.githubusercontent.com/speed/newcrawler-plugin-urlfetch-chrome/master/crx/ModHeader.crx"
-apt install ./google-chrome-stable_79.0.3945.88-1_amd64.deb -y
+wget --no-check-certificate --no-verbose http://ns.xephinh.xyz/google-chrome-stable_current_x86_64_79.0.3945.117.rpm
+yum -y install google-chrome-stable_current_x86_64_79.0.3945.117.rpm
 #============================================
 # Install Google Chromedriver
 #============================================
@@ -57,8 +57,6 @@ mv selenium-server-standalone-3.6.0.jar /usr/local/bin
 #============================================
 yum -y groupinstall xfce
 yum -y install tigervnc-server
-vncserver
-cp /lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@:1.service
 
 #============================================
 # Run Selenium
@@ -69,3 +67,4 @@ yum clean
 # Echo
 #============================================
 printf "${GREEN}java -jar /usr/local/bin/selenium-server-standalone-3.6.0.jar -enablePassThrough false -timeout 60 & \n${NC}"
+printf "${GREEN}vncserver \n${NC}"
