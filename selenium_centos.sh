@@ -53,7 +53,7 @@ mv selenium-server-standalone-3.6.0.jar /usr/local/bin
 #============================================
 # Install VNCserver
 #============================================
-yum -y groupinstall xfce
+yum -y groupinstall "GNOME Desktop"
 yum -y install tigervnc-server
 
 #============================================
