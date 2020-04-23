@@ -75,6 +75,12 @@ systemctl enable supervisord
 systemctl restart supervisord
 
 #============================================
+# Install Supervisor
+#============================================
+rm -f selenium_centos.sh
+rm -f chromedriver_linux64.zip
+rm -f google-chrome-stable_current_x86_64_79.0.3945.117.rpm
+#============================================
 # Run Selenium
 #============================================
 #java -jar /usr/local/bin/selenium-server-standalone-3.6.0.jar -enablePassThrough false -timeout 60 &
