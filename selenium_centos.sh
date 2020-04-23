@@ -23,7 +23,7 @@ fi
 #================================================
 printf "${GREEN}Prepare insatll.\n${NC}"
 yum -y install epel-release
-yum -y update
+#yum -y update
 yum -y install htop
 yum -y install unzip
 yum -y install gnupg
