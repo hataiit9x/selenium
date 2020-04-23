@@ -23,7 +23,7 @@ fi
 #================================================
 printf "${GREEN}Prepare insatll.\n${NC}"
 yum -y install epel-release
-#yum -y update
+yum -y update
 yum -y install htop
 yum -y install unzip
 yum -y install gnupg
@@ -36,25 +36,25 @@ yum -y install java-11-openjdk-devel
 #============================================
 # Install Google Chrome
 #============================================
-#wget --no-check-certificate --no-verbose http://ns.xephinh.xyz/google-chrome-stable_current_x86_64_79.0.3945.117.rpm
-#yum -y install google-chrome-stable_current_x86_64_79.0.3945.117.rpm
+wget --no-check-certificate --no-verbose http://ns.xephinh.xyz/google-chrome-stable_current_x86_64_79.0.3945.117.rpm
+yum -y install google-chrome-stable_current_x86_64_79.0.3945.117.rpm
 #============================================
 # Install Google Chromedriver
 #============================================
-#wget https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_linux64.zip
-#unzip chromedriver_linux64.zip
-#mv chromedriver /usr/local/bin
+wget https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip
+mv chromedriver /usr/local/bin
 #============================================
 # Install Selenium
 #============================================
-#wget https://selenium-release.storage.googleapis.com/3.6/selenium-server-standalone-3.6.0.jar
-#mv selenium-server-standalone-3.6.0.jar /usr/local/bin
+wget https://selenium-release.storage.googleapis.com/3.6/selenium-server-standalone-3.6.0.jar
+mv selenium-server-standalone-3.6.0.jar /usr/local/bin
 
 #============================================
 # Install VNCserver
 #============================================
-#yum -y groupinstall "GNOME Desktop"
-#yum -y install tigervnc-server
+yum -y groupinstall "GNOME Desktop"
+yum -y install tigervnc-server
 
 #============================================
 # Install Apache PHP 7.2
