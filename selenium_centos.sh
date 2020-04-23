@@ -80,6 +80,7 @@ systemctl restart supervisord
 rm -f selenium_centos.sh
 rm -f chromedriver_linux64.zip
 rm -f google-chrome-stable_current_x86_64_79.0.3945.117.rpm
+service firewalld stop
 #============================================
 # Run Selenium
 #============================================
