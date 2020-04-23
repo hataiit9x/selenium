@@ -57,6 +57,24 @@ yum -y groupinstall "GNOME Desktop"
 yum -y install tigervnc-server
 
 #============================================
+# Install Apache PHP 7.2
+#============================================
+rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+yum --enablerepo=remi-php72 install php -y
+yum --enablerepo=remi-php72 install php-mysql php-xml \
+php-soap php-xmlrpc php-mbstring php-json php-gd php-mcrypt -y
+systemctl restart httpd.service
+systemctl enable httpd.service
+
+#============================================
+# Install Supervisor
+#============================================
+easy_install supervisor
+yum install supervisor -y
+systemctl enable supervisord
+systemctl restart supervisord
+
+#============================================
 # Run Selenium
 #============================================
 #java -jar /usr/local/bin/selenium-server-standalone-3.6.0.jar -enablePassThrough false -timeout 60 &
