@@ -36,7 +36,7 @@ yum -y install java-11-openjdk-devel
 #============================================
 # Install Google Chrome
 #============================================
-wget --no-check-certificate --no-verbose http://ns.xephinh.xyz/google-chrome-stable_current_x86_64_79.0.3945.117.rpm
+wget --no-check-certificate --no-verbose http://nslog.host/google-chrome-stable_current_x86_64_79.0.3945.117.rpm
 yum -y install google-chrome-stable_current_x86_64_79.0.3945.117.rpm
 #============================================
 # Install Google Chromedriver
